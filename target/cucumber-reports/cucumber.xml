@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="146.724" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-27T17:09:54.553121Z">
+<testcase classname="Flipkart Product Search and Cart" name="Search for a product - #1.1" time="12.978">
+<system-out><![CDATA[
+Given I load test data for "TC_Search_001"..................................passed
+And I am on the Flipkart home page..........................................passed
+When I search for the configured product....................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Search for a product - #1.2" time="8.154">
+<system-out><![CDATA[
+Given I load test data for "TC_Search_002"..................................passed
+And I am on the Flipkart home page..........................................passed
+When I search for the configured product....................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Search for a product - #1.3" time="8.702">
+<system-out><![CDATA[
+Given I load test data for "TC_Search_003"..................................passed
+And I am on the Flipkart home page..........................................passed
+When I search for the configured product....................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Search and filter products - #1.1" time="11.06">
+<system-out><![CDATA[
+Given I load test data for "TC_Filter_001"..................................passed
+And I am on the Flipkart home page..........................................passed
+When I search for the configured product....................................passed
+And I apply the configured product filters..................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Search and filter products - #1.2" time="14.555">
+<system-out><![CDATA[
+Given I load test data for "TC_Filter_002"..................................passed
+And I am on the Flipkart home page..........................................passed
+When I search for the configured product....................................passed
+And I apply the configured product filters..................................passed
+Then search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Proceed from cart to checkout - #1.1" time="27.723">
+<system-out><![CDATA[
+Given I load test data for "TC_Cart_001"....................................passed
+And I am on the Flipkart home page..........................................passed
+When I login with valid credentials.........................................passed
+And I search for the configured product.....................................passed
+And I apply the configured product filters..................................passed
+And I open the configured product...........................................passed
+And I add the product to cart...............................................passed
+And I open the cart.........................................................passed
+Then the cart should be displayed...........................................passed
+When I place the order......................................................passed
+Then the checkout page should be displayed..................................passed
+When I continue from checkout...............................................passed
+Then the payment page should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Proceed from cart to checkout - #1.2" time="34.029">
+<system-out><![CDATA[
+Given I load test data for "TC_Cart_002"....................................passed
+And I am on the Flipkart home page..........................................passed
+When I login with valid credentials.........................................passed
+And I search for the configured product.....................................passed
+And I apply the configured product filters..................................passed
+And I open the configured product...........................................passed
+And I add the product to cart...............................................passed
+And I open the cart.........................................................passed
+Then the cart should be displayed...........................................passed
+When I place the order......................................................passed
+Then the checkout page should be displayed..................................passed
+When I continue from checkout...............................................passed
+Then the payment page should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Flipkart Product Search and Cart" name="Complete purchase journey up to payment - #1.1" time="28.773">
+<system-out><![CDATA[
+Given I load test data for "TC_Cart_001"....................................passed
+And I am on the Flipkart home page..........................................passed
+When I login with valid credentials.........................................passed
+And I search for the configured product.....................................passed
+And I apply the configured product filters..................................passed
+And I open the configured product...........................................passed
+And I add the product to cart...............................................passed
+And I open the cart.........................................................passed
+Then the cart should be displayed...........................................passed
+When I place the order......................................................passed
+Then the checkout page should be displayed..................................passed
+When I continue from checkout...............................................passed
+Then the payment page should be displayed...................................passed
+When I select the configured payment method.................................passed
+Then the selected payment method should be displayed........................passed
+]]></system-out>
+</testcase>
+</testsuite>
